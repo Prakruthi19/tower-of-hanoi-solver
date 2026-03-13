@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tower of Hanoi Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tower of Hanoi</h1>
+    
+    <div class="game-container">
+        <div class="rod" id="rod-0" data-rod="0">
+            <div class="disk disk-3" data-size="3"></div>
+            <div class="disk disk-2" data-size="2"></div>
+            <div class="disk disk-1" data-size="1"></div>
+        </div>
+        
+        <div class="rod" id="rod-1" data-rod="1"></div>
+        
+        <div class="rod" id="rod-2" data-rod="2"></div>
+    </div>
+    
+<div class="control-panel">
+    <div class="panel-section settings">
+        <div class="control-group">
+            <label for="disk-slider">Disks: <span id="disk-count-display">3</span></label>
+            <input type="range" id="disk-slider" min="3" max="8" value="3">
+        </div>
+        <div class="control-group">
+            <label for="speed-slider">Speed: <span id="speed-display">Normal</span></label>
+            <input type="range" id="speed-slider" min="50" max="1000" step="50" value="400">
+        </div>
+    </div>
+
+    <div class="panel-section actions">
+        <div class="button-group">
+            <button id="solve-btn" class="primary-btn">AI Auto-Solve</button>
+            <button id="reset-btn" class="secondary-btn">Reset</button>
+        </div>
+        <div class="button-group manual-controls">
+            <button id="undo-btn" class="utility-btn">↩ Undo</button>
+            <p class="hint-text">Manual Play Enabled</p>
+        </div>
+    </div>
+
+    <div class="panel-section stats-display">
+        <div class="stat-item">
+            <strong>Moves:</strong> <span id="move-count">0</span>
+        </div>
+        <div class="stat-item">
+            <strong>Best:</strong> <span id="min-moves">7</span>
+        </div>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
