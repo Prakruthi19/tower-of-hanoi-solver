@@ -45,8 +45,7 @@ Where **n** is the number of disks.
 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/tower-of-hanoi-game.git
-cd tower-of-hanoi-game
+git clone https://github.com/Prakruthi19/tower-of-hanoi-solver.git
 ```
 2. Run the application
 Open index.html in your web browser.
